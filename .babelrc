@@ -1,0 +1,7 @@
+{
+  /* Added a preset array which is essentially a configuration of how babel should transpile JavaScript code */
+  "presets": [
+    "env",
+    "stage-0"
+  ]
+}
