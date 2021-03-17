@@ -6,7 +6,7 @@ import schema from "./schema";
 
 /* Importing mongoose and connect to a MongoDb database notetaking_db */
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost/notetaking_db", {
+mongoose.connect("mongodb+srv://Abhishek:abhishek@nodejsproject.efica.mongodb.net/notes?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
