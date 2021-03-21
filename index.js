@@ -3,10 +3,11 @@ import express from "express";
 import graphlHTTP from "express-graphql";
 import mongoose from "mongoose";
 import schema from "./schema";
-
+require("dotenv").config();
 /* Importing mongoose and connect to a MongoDb database notetaking_db */
 mongoose.Promise = global.Promise;
-mongoose.connect("mongodb+srv://Abhishek:abhishek@nodejsproject.efica.mongodb.net/notes?retryWrites=true&w=majority", {
+const DATABASE_URL = process.env.DATABASE_URL;
+mongoose.connect(DATABASE_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
